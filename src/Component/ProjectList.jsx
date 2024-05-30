@@ -4,7 +4,11 @@ function ProjectList({ images }) {
   return (
     <div className='images'>
       {images.map((e) => {
-        return <img className='img' src={e.img} alt={e.category}></img>;
+        return (
+          <div className='img'>
+            <img src={e.img} alt={e.category} />
+          </div>
+        );
       })}
     </div>
   );
